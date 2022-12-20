@@ -1,0 +1,56 @@
+.container{
+    width: 100%;
+    max-width: 140rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    height: 100%;
+}
+p{
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3rem;
+    font-weight:400;
+}
+h3{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    gap: 1rem;
+    transition: 0.2s ease-in;
+  
+
+}
+input{
+    border: 0px;
+    background: none;
+    outline: none;
+}
+
+.botao{
+    background-color: aqua;
+    padding:1.5rem 3.5rem;
+    border-radius: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    &:hover{
+        transition: 0.2s ease-out;
+        transform: scale(1.1);
+    }
+}
+
+.icons{
+    height: 2.8rem;
+    width: 2.8rem;
+}
