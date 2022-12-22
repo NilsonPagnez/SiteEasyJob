@@ -1,22 +1,29 @@
-header{position: absolute;
+header{
+    position: absolute;
     z-index: 400;
-    height: 9.1rem;
+    height: auto;
+    
     background: none;
     width: 100%;
     background-color: rgba($color: white, $alpha: 0.7);
-    backdrop-filter: blur(20px);
-    border-bottom: 0.2rem solid rgba($color: gray, $alpha: 0.4) ;
+    backdrop-filter: blur(2rem);
+    border-bottom: 0.2rem solid rgba($color: #6F7C84, $alpha: 0.4) ;
     .container{
         
         max-width: 160rem;
         padding-top: 1.5rem;
         display: flex;
-        justify-content: space-between;
         padding-bottom: 1.5rem;
+        flex-direction: column;
+        .header_content{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            
         
         .busca{
             display: flex;
-            border: 0.1rem solid gray;
+            border: 0.1rem solid #6F7C84;
             border-radius: 5rem;
             margin: 1rem 0;
             padding-left: 2rem;
@@ -36,11 +43,20 @@ header{position: absolute;
             display: flex;
             gap: 6rem;
             align-items: center;
+            .active{
+                color: #6F7C84;
+
+            }
             button{
                 display: flex;
                 font-size: 1.8rem;
                 font-weight: 600;
                 align-items: center;
+                
+                &:hover{
+                    color: #6F7C84;
+                    transition: 0.2s;
+                }
                 
             }
             .logar{
@@ -50,7 +66,48 @@ header{position: absolute;
                     display: flex;
                     align-items: center;
                 }
+                
+                &:hover{
+                    filter: invert(50%) sepia(5%) saturate(934%) hue-rotate(159deg) brightness(95%) contrast(86%);
+
+                   
+                }
             }
         }
     }
+
+
+    .before_menu{
+    .active{
+        overflow: hidden;
+        transition:  0.5s ease-in-out;
+        height: 20rem;
+        .active{
+            display: block!important;
+            animation: FadeIn 0.5s forwards;
+        }
+    }
+    
+    .menu{
+        overflow: hidden;
+        display: flex;
+        height: 0px;
+        width: 100%;      
+        transition: 0.5s ease-in-out;;
+        
+            .active{
+                display: block!important;
+                animation: FadeIn 0.5s forwards;
+            }
+            .menus{
+                display: none;
+                
+            }
+        
+    }
+    }
+    }
+    
+
 }
+

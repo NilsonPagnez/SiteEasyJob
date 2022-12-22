@@ -5,18 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logar</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/scss/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section>
-        <div class="main">
+    <section class="s-logar">
+        <div class="main"data-aos="fade-down">
+
             <div class="left">
-                Acesse o melhor app de fods
+                    <img class="trofeu" src="/image/Img_loginVitória.png"  alt="">
             </div>
+
+
             <div class="right">
-                dasda
+                
+                <img src="/image/Icon_maleta-com-alca.png" alt="">
+                <h1>Seja bem vindo</h1>
+                <h3>Faça seu login aqui!</h3>
+
+                <div class="inputs">
+                    <input type="email" placeholder="Digite seu e-mail">
+                    <img  src="/image/Icon_arroba.png" alt="">
+                </div>
+
+                <div class="inputs">
+                    <input class="senha" type="password" placeholder="Digite sua senha">
+                    <img class="img_password" src="/image/icon_Password_hidden.png" alt="">
+                </div>
+
+                <button><a href="/index.html">Login</a></button>
+
+                    <div class="btns">
+                        <a href=""><img class="icons" src="/image/Icon_google.png" alt=""></a>
+                        <a href=""><img class="icons" src="/image/Icon_facebook.png" alt=""></a>
+                    </div>
+
+                <p>Ainda não possui uma conta?&nbsp<a  href="">Cadastre-se</a></p>
+
             </div>
+
         </div>
     </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/js/AOS.js"></script>
+    <script src="/js/login.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>
