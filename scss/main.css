@@ -459,6 +459,7 @@ header .container .before_menu .menu .menus {
 }
 .s-logar .main .right .inputs .img_password {
   cursor: pointer;
+  transition: 1s ease-in;
 }
 .s-logar .main .right h3 {
   padding-top: 2rem;

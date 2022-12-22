@@ -14,6 +14,5 @@ visaoSenha.addEventListener('click', () =>{
     }
 
     
-    visaoSenha.classList.toggle('fadein')
 
 })
