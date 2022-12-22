@@ -6,7 +6,7 @@ header{
     background: none;
     width: 100%;
     background-color: rgba($color: white, $alpha: 0.7);
-    backdrop-filter: blur(2rem);
+    backdrop-filter: blur(1.5rem);
     border-bottom: 0.2rem solid rgba($color: #6F7C84, $alpha: 0.4) ;
     .container{
         
@@ -82,9 +82,14 @@ header{
         overflow: hidden;
         transition:  0.5s ease-in-out;
         height: 20rem;
+        
         .active{
             display: block!important;
             animation: FadeIn 0.5s forwards;
+        }
+        .menus{
+            display: none;
+            
         }
     }
     
@@ -95,10 +100,10 @@ header{
         width: 100%;      
         transition: 0.5s ease-in-out;;
         
-            .active{
-                display: block!important;
-                animation: FadeIn 0.5s forwards;
-            }
+        .active{
+            display: block!important;
+            animation: FadeIn 0.5s forwards;
+        }
             .menus{
                 display: none;
                 
