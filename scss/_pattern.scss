@@ -1,9 +1,23 @@
+:root{
+    --main-brand-color: 	hsl(216, 61%, 52%);
+    --main-brand-color-opacified: 	hsl(216, 61%, 52%,0.9);
+    --darker-brand-color: 	hsl(216, 87%, 37%);
+    --text-color-lightGray:hsl(203, 9%, 48%) ;
+    --text-color-white: #E3ECF5;
+}
+
+
+
 .container{
     width: 100%;
     max-width: 140rem;
     margin: 0 auto;
     padding: 0 1.5rem;
     height: 100%;
+
+    @media (max-width: 1440px) {
+        max-width: 125rem;
+    }
 }
 
 
@@ -44,14 +58,15 @@ input{
 }
 
 .botao{
-    background-color: aqua;
-    padding:1.5rem 3.5rem;
-    border-radius: 2rem;
+    background-color: black;
+    color:  aliceblue;
+    padding:1.5rem 2.5rem;
+    border-radius: 0.4rem;
     font-size: 2rem;
     font-weight: 600;
     &:hover{
         transition: 0.2s ease-out;
-        transform: scale(1.1);
+        transform: scale(105%);
     }
 }
 

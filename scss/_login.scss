@@ -56,7 +56,7 @@
                 align-items: center;
                 input{
                     &:hover{
-                        border-color:rgba($color: #2562BD, $alpha: 0.9) ;
+                        border-color: var(--darker-brand-color) ;
                         transition: 0.2s ease-in-out;
                     }
                     width: 35rem;
@@ -91,7 +91,7 @@
                 padding-top: 2rem;
                 padding-bottom: 0.5rem;
                 margin-bottom: 2rem;
-                border-bottom: 0.2rem solid #2562BD;
+                border-bottom: 0.2rem solid var(--main-brand-color);
             }
 
            
@@ -102,12 +102,18 @@
                 justify-content: center;
                 padding: 0.7rem 2rem;
                 border-radius: 0.7rem;
-                background-color: #2562BD;
+                background-color: var(--darker-brand-color);
                 width: 35rem;
                 font-weight: 500;
                 font-size: 1.8rem;
                 
                 color:white;
+                transition: 0.2s ease-in-out;
+
+                &:hover{
+                    background-color: var(--main-brand-color);
+                    transition: 0.2s ease-in-out;
+                }
                 
             }
 
@@ -121,7 +127,7 @@
                     width: 17rem;
                     transition: 0.2s ease-in-out;
                     &:hover{
-                        border-color:rgba($color: #2562BD, $alpha: 0.9) ;
+                        border-color:var(--darker-brand-color) ;
                         transition: 0.2s ease-in-out;
                         
                     }
@@ -147,12 +153,13 @@
                             content: "";
                             width: 0rem;
                             height: 0.2rem;
-                            background-color: #2562BD;
+                            background-color: var(--darker-brand-color);
                             border-radius: 4rem;
                             transition: 0.4s ease-out;
 
                         }
                         &:hover{
+                            background: none;
                             &::after{
                                 width: 100%;
                                 transition: 0.5s ease-out;
